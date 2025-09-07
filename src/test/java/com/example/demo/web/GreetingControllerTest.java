@@ -23,6 +23,7 @@ class GreetingControllerTest {
     @MockitoBean
     GreetingService greetingService;
 
+
     @Test
     void greet_ok() throws Exception {
         BDDMockito.given(greetingService.greet("amwtke")).willReturn("Hello, amwtke!");
